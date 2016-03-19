@@ -1,43 +1,40 @@
 spremenljivka = open("dnk.txt").read()
+#las
+crn_las = "CCAGCAATCGC"
+rjavi_las =  "GCCAGTGCCG"
+korencek_las = "TTAGCTATCGC"
 
-crna = "CCAGCAATCGC"
-rjava =  "GCCAGTGCCG"
-korencek = "TTAGCTATCGC"
+#obraz
+kvadraten_obraz = "GCCACGG"
+okrogel_obraz = "ACCACAA"
+ovalen_obraz = "AGGCCTCA"
 
+#oci
+rjave_oci = "AAGTAGTGAC"
+modre_oci = "TTGTGGTGGC"
+zelene_oci = "GGGAGGTGGC"
 
-kvadraten = "GCCACGG"
-okrogel = "ACCACAA"
-ovalen = "AGGCCTCA"
-
-rjava = "AAGTAGTGAC"
-
-modra = "TTGTGGTGGC"
-zelena = "GGGAGGTGGC"
-
+#spol
 moski = "TGCAGGAACTTC"
 zenska = "TGAAGGACCTTC"
 
-
+#rasa
 belec = "AAAACCTCA"
 crnec = "CGACTACAG"
 azijec = "CGCGGGCCG"
 
-print "crna: ", spremenljivka.find("CCAGCAATCGC")
-print "rjava: ", spremenljivka.find("GCCAGTGCCG")
-print "korencek: ", spremenljivka.find("TTAGCTATCGC")
-print "kvadraten: ", spremenljivka.find("GCCACGG")
-print "okrogel: ", spremenljivka.find("ACCACAA")
+#ziga
+ziga =  korencek_las or rjave_oci or okrogel_obraz
+matej = crn_las or modre_oci or ovalen_obraz
+miha =  rjavi_las or zelene_oci or kvadraten_obraz
 
-print "ovalen: ", spremenljivka.find("AGGCCTCA")
-print "modra: ", spremenljivka.find("TTGTGGTGGC")
-print "zelena: ", spremenljivka.find("GGGAGGTGGC")
 
-print "rjava: ", spremenljivka.find("AAGTAGTGAC")
+if spremenljivka.find(ziga)>0:
+    print "Ziga je lopov."
 
-print "moski: ", spremenljivka.find("TGCAGGAACTTC")
-print "zenska: ", spremenljivka.find("TGAAGGACCTTC")
+if spremenljivka.find(matej)>0:
+    print "Matej je lopov."
 
-print "belec: ", spremenljivka.find("AAAACCTCA")
-print "crnec: ", spremenljivka.find("CGACTACAG")
-print "azijec: ", spremenljivka.find("CGCGGGCCG")
+if spremenljivka.find(miha)>0:
+    print "Miha je lopov."
 
