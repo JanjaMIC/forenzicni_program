@@ -1,4 +1,5 @@
-spremenljivka = open("dnk.txt").read()
+
+x = open("dnk.txt").read()
 #las
 crn_las = "CCAGCAATCGC"
 rjavi_las =  "GCCAGTGCCG"
@@ -23,18 +24,13 @@ belec = "AAAACCTCA"
 crnec = "CGACTACAG"
 azijec = "CGCGGGCCG"
 
-#ziga
-ziga =  korencek_las or rjave_oci or okrogel_obraz
-matej = crn_las or modre_oci or ovalen_obraz
-miha =  rjavi_las or zelene_oci or kvadraten_obraz
 
-
-if spremenljivka.find(ziga)>0:
+if x.find(korencek_las) > 0 and x.find(rjave_oci) > 0 and x.find(okrogel_obraz) > 0:
     print "Ziga je lopov."
 
-if spremenljivka.find(matej)>0:
+if x.find(crn_las) > 0 and x.find(modre_oci) > 0 and x.find(ovalen_obraz) > 0:
     print "Matej je lopov."
 
-if spremenljivka.find(miha)>0:
+if x.find(rjavi_las) > 0 and x.find(zelene_oci) > 0 and x.find(kvadraten_obraz) > 0:
     print "Miha je lopov."
 
